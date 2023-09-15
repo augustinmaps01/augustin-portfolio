@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1c1cdd84e5.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src = "img/portfolio logo.png" class="logo" alt="">
+                    <ul id ="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Web Developer</p>
+                    <h1>Hi, I'm <span>Augustin<br></span> Maputol</h1>
+                </div>
+            </div>
+        </div>
+                <!-- ABOUT SECTION -->
+        <div id ="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="img/my pic.jpg" alt = "user">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>A passionate and creative web developer dedicated to crafting
+                            unique and user-friendly digital experiences. With a background in
+                            Bachelor oF Science Information Technology, I have honed my skills
+                            in web development and design to bring ideas to life on the internet.
+                        </p>
+                        <br>
+                        <p>
+                            My journey into the world of web development began
+                            with a burning curiosity for how websites work.
+                        </p>
+                        <br>
+                        <p>
+                            I take pride in my ability to turn complex ideas into clean,
+                            efficient, and user-friendly websites. Whether it's designing
+                            a sleek and modern user interface or optimizing website performance
+                            for lightning-fast load times, I am dedicated to delivering high-quality
+                            work that leaves a lasting impression.
+                        </p>
+                        <br>
+                        <p>
+                            In addition to my technical skills, I am a firm believer
+                            in the power of teamwork. I enjoy collaborating with designers,
+                            content creators, and other developers to create holistic
+                            web solutions. I understand that the best websites are the
+                            result of synergy between diverse talents and perspectives.
+                        </p>
+                        <br>
+                        <p>
+                            When I'm not immersed in code, I love to stay updated
+                            with industry news, experiment with new technologies,
+                            and contribute to open-source projects.
+                            I also value work-life balance and make time for
+                            hobbies like Playing Online Games Watching Movies etc.
+                        </p> 
+                        <br>
+                        <p>
+                            Thank you for visiting my portfolio website.
+                            I'm excited to connect with like-minded individuals
+                            and organizations who are passionate about creating
+                            exceptional web experiences. If you have a project in
+                            mind or simply want to chat about all things
+                            web development, feel free to reach out. 
+                            Let's bring your ideas to life on the web!
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>  
+                        <div class="tab-contents active-tabs" id = "skills">
+                            <ul>
+                                <li><span>Front-end</span><br>HTML,CSS,JS,React</li>
+                                <li><span>Graphic Design</span><br>Adobe Photoshop</li>
+                                <li><span>Back-end/Database</span><br>Node JavaScript, Php, MySQL</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id = "experience">
+                            <ul>
+                                <li><span>2019-2020</span><br>Internship at Rocketstack Inc.</li>
+                                <li><span>2022-2023</span><br>Draftsman at Axelum Resources Corp.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id = "education">
+                            <ul>
+                                <li><span>2020</span><br>BSIT from Christ the King College Philippines.</li>
+                            </ul>
+                        </div>
+                                                                   
+                    </div>            
+                </div>
+            </div>
+        </div>
+        <!-- Services  Section -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>
+                            Ensuring that your website is fully responsive, providing a seamless user experience on various devices, from desktops to smartphones.<br>
+                            Design intuitive and user-friendly interfaces that guide visitors seamlessly through your website.<br>
+                            Organize your website's content logically, making it easy for users to find what they need.<br>
+                            Revamp and modernize existing websites to align them with current design trends and user expectations.<br>
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        <h2>Graphic Design</h2>
+                        <p>I specialize in providing top-notch layout design solutions tailored to your unique needs. With a passion for visual aesthetics and a keen eye for detail, I am dedicated to transforming your ideas into stunning and user-friendly layouts that captivate and engage your audience.</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-codepen"></i>
+                        <h2>Web Development</h2>
+                        <p> I create tailored websites and web applications from scratch,
+                            ensuring they align perfectly with your brand and objectives. 
+                            Whether it's a business website, e-commerce platform, or a 
+                            specialized web tool, 
+                            I am capable to bring your vision to reality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- portfolio section -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="img/capstone-2.jpg" alt = "">
+                        <div class="layer">
+                            <h3>School Event Management System</h3>
+                            <p>School Event Management System Capstone Thesis Project:<br> Web Based System the main Functionality is to Reservation,School Events monitoring the student who attends a certain also checking attendance,evaluation and etc. thw objective of this project is to monitor school events.</p>
+                            <a href ="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact section -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> augustincabanamaputol@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> +(63)991-847-5944dsdfsdfsdffs</p>
+                        <div class="social-icons">
+                            <a href = "https://www.facebook.com/cloudsephiroth56/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href = "https://www.instagram.com/hyorinmaruuuu/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href = "https://www.linkedin.com/in/augustin-maputol-a50406202/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href = "https://github.com/augustinmaps01"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href= "img/AUGUSTIN C. MAPUTOL RESUME 2023.pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name = "submit-to-google-sheet">
+                            <input type ="text" name = "Name" placeholder="Your Name" required>
+                            <input type ="email" name = "Email" placeholder="Your Email" required>
+                            <textarea name = "Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class ="btn btn2">Submit</button>
+                        </form>
+                        <!-- <span id = "message"></span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©<span id ="dy"></span> Augstin Portfolio </p>
+        </div>
+
+           <script src  = "js/script.js"></script>
+       
+
+    </body>
+</html> 
